@@ -14,7 +14,6 @@
 .blog {
   width: 90%;
   margin-bottom: 50px;
-  display: flex;
   justify-content: center;
   margin: 0 auto;
 }
@@ -30,6 +29,7 @@
 }
 
 .blog-box {
+  display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -39,6 +39,7 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
+  flex-flow: column;
 }
 
 .blog-text {
@@ -60,8 +61,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .blog-item {
-    position: relative;
+  .blog-box {
     flex-flow: column;
   }
 }
